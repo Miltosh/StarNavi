@@ -31,7 +31,7 @@ function App() {
     useEffect(() => {
         //Getting modes of game
         (async () => {
-            let response = await fetch(`http://demo1030918.mockable.io/`);
+            let response = await fetch(`https://demo1030918.mockable.io/`);
             let content = await response.json();
             setModes(content); // When received all modes from the request, set it to state
         })();
